@@ -7,7 +7,7 @@
 ![GitHub](https://img.shields.io/badge/GitHub-Repository-lightgrey?logo=github)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-**Asistente Virtual Inteligente con NLP para el Programa Propedéutico**
+**Asistente Virtual Inteligente con pattern matching para el Programa Propedéutico**
 
 [Características](#-características) • [Demo](#-demo-rápida) • [Instalación](#-instalación-completa) • [Uso](#-uso) • [Estructura](#️-estructura-del-proyecto)
 
