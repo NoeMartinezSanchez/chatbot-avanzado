@@ -1,0 +1,143 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .chat-container {
+        height: 95vh;
+        border-radius: 10px;
+    }
+    
+    .chat-header {
+        padding: 15px 20px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .logo-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .logo {
+        width: 50px;
+        height: 50px;
+        font-size: 2em;
+    }
+    
+    .title-section h1 {
+        font-size: 1.2em;
+    }
+    
+    .chat-messages {
+        padding: 15px;
+    }
+    
+    .message {
+        max-width: 90%;
+    }
+    
+    .welcome-message {
+        max-width: 95%;
+    }
+    
+    .welcome-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .quick-questions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .quick-question {
+        padding: 10px 12px;
+        font-size: 0.85em;
+    }
+    
+    .chat-input-container {
+        padding: 15px 20px;
+    }
+    
+    .input-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #user-input {
+        padding: 12px 15px;
+    }
+    
+    .send-btn {
+        padding: 12px 20px;
+        justify-content: center;
+    }
+    
+    .input-footer {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-section h1 {
+        font-size: 1.1em;
+    }
+    
+    .title-section p {
+        font-size: 0.8em;
+    }
+    
+    .status-indicator {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+    
+    .message {
+        padding: 12px 15px;
+        font-size: 0.9em;
+    }
+    
+    .feature {
+        font-size: 0.8em;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #ecf0f1;
+        --text-light: #bdc3c7;
+        --bg-color: #2c3e50;
+        --card-bg: #34495e;
+        --border-color: #4a6572;
+    }
+    
+    body {
+        background: linear-gradient(135deg, #2c3e50, #34495e);
+    }
+    
+    .user-message {
+        background: linear-gradient(135deg, #3498db, #2980b9);
+    }
+    
+    .bot-message {
+        background: var(--card-bg);
+        border-color: var(--border-color);
+    }
+    
+    #user-input {
+        background: var(--card-bg);
+        color: var(--text-color);
+        border-color: var(--border-color);
+    }
+    
+    #user-input::placeholder {
+        color: var(--text-light);
+    }
+}
